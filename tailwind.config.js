@@ -15,6 +15,7 @@ module.exports = {
         body: "#697488",
         dark: "#051036",
         "light-secondary": "#F5F6FD",
+        "light-thirdary": "#F5F5F5",
       },
     },
   },

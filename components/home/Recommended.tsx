@@ -31,13 +31,23 @@ const Recommended = () => {
             <div
               className={`transition-all duration-500 ${
                 showOpt ? "opacity-100 visible" : "opacity-0 invisible"
-              } absolute top-[120%] left-[50%] translate-x-[-50%] shadow-lg w-[160px] bg-white border border-light rounded flex flex-col gap-6`}
+              } absolute top-[120%] left-[50%] translate-x-[-50%] shadow-lg w-[160px] bg-white border border-light rounded flex flex-col gap-6 z-50 py-4`}
             >
-              <li className="block px-4">Animation</li>
-              <li className="block px-4">Design</li>
-              <li className="block px-4">Illustration</li>
-              <li className="block px-4">Lifestyle</li>
-              <li className="block px-4">Business</li>
+              <li className="block px-4 cursor-pointer transition-all hover:text-primary">
+                Animation
+              </li>
+              <li className="block px-4 cursor-pointer transition-all hover:text-primary">
+                Design
+              </li>
+              <li className="block px-4 cursor-pointer transition-all hover:text-primary">
+                Illustration
+              </li>
+              <li className="block px-4 cursor-pointer transition-all hover:text-primary">
+                Lifestyle
+              </li>
+              <li className="block px-4 cursor-pointer transition-all hover:text-primary">
+                Business
+              </li>
             </div>
           </div>
         </div>

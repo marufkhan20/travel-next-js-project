@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "@/components/Footer";
 import Banner from "@/components/home/Banner";
 import Blogs from "@/components/home/Blogs";
 import Destinations from "@/components/home/Destinations";
@@ -19,7 +18,6 @@ const Page = () => {
       <Reviews />
       <Blogs />
       <DestinationsList />
-      <Footer />
     </main>
   );
 };

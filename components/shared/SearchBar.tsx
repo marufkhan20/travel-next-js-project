@@ -1,18 +1,26 @@
 "use client";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HiMinus, HiPlus } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { RiMapPinLine } from "react-icons/ri";
 import Button from "../ui/Button";
 
-const SearchBar = () => {
+interface IProps {
+  type?: string;
+}
+
+const SearchBar: FC<IProps> = ({ type }) => {
   const [locationBox, setLocationBox] = useState(false);
   const [location, setLocation] = useState("");
   const [showGuestBox, setShowGuestBox] = useState(false);
 
   return (
-    <div className="justify-between mx-auto flex items-center bg-white rounded-full px-3">
+    <div
+      className={`justify-between mx-auto flex items-center bg-white ${
+        type === "secondary" ? "rounded-md" : "rounded-full"
+      } px-3`}
+    >
       <div className="flex flex-col gap-1 ml-7 py-1 relative">
         <label
           className="text-[15px] font-medium text-heading"
@@ -41,7 +49,7 @@ const SearchBar = () => {
         <div
           className={`transition-all duration-500 ${
             locationBox ? "visible opacity-100" : "invisible opacity-0"
-          } absolute top-[80px] -left-8 rounded-md min-w-[500px] bg-white p-7 shadow-lg`}
+          } absolute top-[80px] -left-8 rounded-md min-w-[500px] bg-white p-7 z-50 shadow-lg`}
         >
           <div
             className="p-4 flex gap-2 transition-all hover:bg-light-secondary rounded-md cursor-pointer"
@@ -141,7 +149,7 @@ const SearchBar = () => {
         <div
           className={`transition-all duration-500 ${
             showGuestBox ? "visible opacity-100" : "invisible opacity-0"
-          } absolute top-[80px] -left-14 rounded-md min-w-[400px] bg-white px-7 shadow-lg`}
+          } absolute top-[80px] -left-14 rounded-md min-w-[400px] bg-white px-7 z-50 shadow-lg`}
         >
           <div className="text-heading py-6 flex items-center justify-between gap-5 border-b border-light">
             <h3 className="text-[15px] font-medium">Adults</h3>
@@ -185,7 +193,13 @@ const SearchBar = () => {
         </div>
       </div>
       <div className="py-2">
-        <Button className="py-5 px-9 rounded-full flex items-center gap-2">
+        <Button
+          className={`${
+            type === "secondary"
+              ? "rounded-md py-4 px-10"
+              : "rounded-full py-5 px-9"
+          } flex items-center gap-2`}
+        >
           <BiSearch className="text-xl" />
           <span>Search</span>
         </Button>
