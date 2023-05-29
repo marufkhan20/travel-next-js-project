@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 const HotelItem = () => {
   return (
     <div className="py-6 border-b border-light flex gap-5 w-full">
-      <div className="w-[22%]">
+      <div className="w-[25%]">
         <img
           src="https://creativelayers.net/themes/gotrip-html/img/lists/hotel/1/1.png"
           className="w-full rounded-md h-full"
@@ -12,7 +12,7 @@ const HotelItem = () => {
         />
       </div>
 
-      <div className="flex justify-between gap-5 w-[78%]">
+      <div className="flex justify-between gap-5 w-[75%]">
         <div>
           <h3 className="font-medium text-lg text-heading mb-3">
             Great Northern Hotel, a Tribute Portfolio Hotel, London
