@@ -5,7 +5,7 @@ import Heading from "../shared/Heading";
 
 const Destinations = () => {
   return (
-    <section className="py-[130px]">
+    <section className="py-[130px] px-10 sm:px-0">
       <div className="container mx-auto">
         <div className="flex justify-between gap-5 items-end">
           <Heading
@@ -21,7 +21,7 @@ const Destinations = () => {
         </div>
 
         {/* destinations list */}
-        <div className="grid grid-cols-4 gap-[30px] mt-10">
+        <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-[30px] mt-10">
           <div className="relative">
             <Link href="#">
               <img
@@ -65,15 +65,15 @@ const Destinations = () => {
         </div>
 
         {/* offer list */}
-        <div className="grid grid-cols-2 gap-8 mt-28">
+        <div className="grid md:grid-cols-2 gap-8 mt-28">
           <div className="relative">
             <img
               src="https://creativelayers.net/themes/gotrip-html/img/backgrounds/1.png"
               alt="destination"
-              className="w-full rounded-md"
+              className="w-full min-h-fit rounded-md"
             />
             <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full py-20 px-16 rounded-md bg-dark/50">
-              <h3 className="text-white text-[40px] leading-[58px]">
+              <h3 className="text-white text-[30px] lg:text-[40px] leading-[40px] lg:leading-[58px]">
                 Things to do on
                 <br />
                 your trip
@@ -90,13 +90,13 @@ const Destinations = () => {
             <img
               src="https://creativelayers.net/themes/gotrip-html/img/backgrounds/2.png"
               alt="destination"
-              className="w-full rounded-md"
+              className="w-full min-h-fit rounded-md"
             />
             <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full py-20 px-16 rounded-md bg-dark/50">
               <span className="inline-block text-[15px] font-medium text-white mb-2">
                 Enjoy Summer Deals
               </span>
-              <h3 className="text-white text-[40px] leading-[58px]">
+              <h3 className="text-white text-[30px] lg:text-[40px] leading-[40px] lg:leading-[58px]">
                 Up to 70% Discount!
               </h3>
               <Link

@@ -2,7 +2,7 @@ import Heading from "../shared/Heading";
 
 const DestinationsList = () => {
   return (
-    <section className="pb-32">
+    <section className="pb-32 px-10 sm:px-0">
       <div className="container mx-auto">
         <Heading
           heading="Destinations we love"
@@ -21,7 +21,7 @@ const DestinationsList = () => {
             </button>
           </div>
 
-          <div className="mt-10 grid grid-cols-6 gap-7">
+          <div className="mt-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-7">
             <div className="text-heading transition-all hover:text-primary cursor-pointer">
               <h3 className="text-[15px] font-medium">Hawai</h3>
               <span className="text-sm text-body">12,683 properties</span>

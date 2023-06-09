@@ -2,7 +2,7 @@ import Heading from "../shared/Heading";
 
 const Blogs = () => {
   return (
-    <section>
+    <section className="px-10 sm:px-0">
       <div className="container mx-auto py-32">
         <div className="text-center">
           <Heading
@@ -11,7 +11,7 @@ const Blogs = () => {
           />
         </div>
 
-        <div className="mt-10 grid grid-cols-3 gap-7">
+        <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-7">
           <div>
             <div className="overflow-hidden rounded-lg">
               <img

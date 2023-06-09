@@ -6,7 +6,7 @@ const Banner = () => {
       style={{ backgroundImage: "url(/bg.webp)" }}
       className="min-h-[92vh] w-full"
     >
-      <div className="w-full min-h-[92vh] bg-dark bg-opacity-80 flex flex-col items-center justify-center text-white">
+      <div className="w-full min-h-[92vh] bg-dark bg-opacity-80 flex flex-col items-center justify-center text-white px-10 sm:px-0">
         <h2 className="text-[60px] text-white mt-28">
           Find Next Place To Visit
         </h2>
@@ -38,7 +38,7 @@ const Banner = () => {
           </ul>
         </div>
 
-        <div className="mt-8 w-[48%]">
+        <div className="mt-8 w-[95%] lg:w-[80%] xl:w-[60%] 2xl:w-[48%]">
           <SearchBar />
         </div>
       </div>

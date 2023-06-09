@@ -17,7 +17,7 @@ const SearchBar: FC<IProps> = ({ type }) => {
 
   return (
     <div
-      className={`justify-between mx-auto flex items-center bg-white ${
+      className={`justify-between mx-auto flex flex-wrap items-center bg-white ${
         type === "secondary" ? "rounded-md" : "rounded-full"
       } px-3`}
     >

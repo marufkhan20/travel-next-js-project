@@ -1,8 +1,8 @@
 const Services = () => {
   return (
-    <section className="pb-28">
+    <section className="pb-28 px-10 sm:px-0">
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
           <div className="text-center">
             <img
               src="https://creativelayers.net/themes/gotrip-html/img/featureIcons/1/1.svg"

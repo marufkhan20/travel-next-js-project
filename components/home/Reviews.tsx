@@ -3,10 +3,10 @@ import Heading from "../shared/Heading";
 
 const Reviews = () => {
   return (
-    <section className="bg-[#E5F0FD] py-32">
+    <section className="bg-[#E5F0FD] py-32 px-10 sm:px-0">
       <div className="container mx-auto">
-        <div className="flex gap-10">
-          <div className="w-[50%]">
+        <div className="flex flex-col md:flex-row gap-10">
+          <div className="w-full md:w-[50%]">
             <Heading
               heading={
                 <span>
@@ -46,7 +46,7 @@ const Reviews = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className="w-full md:w-[50%]">
             <div className="flex items-center gap-7">
               <img
                 src="https://creativelayers.net/themes/gotrip-html/img/avatars/1.png"

@@ -8,9 +8,9 @@ import Heading from "../shared/Heading";
 const Recommended = () => {
   const [showOpt, setShowOpt] = useState(false);
   return (
-    <section className="pb-28">
+    <section className="pb-28 px-10 sm:px-0">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-5 items-end">
+        <div className="flex justify-between gap-5 items-end flex-wrap">
           <Heading
             heading="Recommended"
             subHeading="Interdum et malesuada fames ac ante ipsum"
@@ -53,7 +53,7 @@ const Recommended = () => {
         </div>
 
         {/* recommended list */}
-        <div className="mt-10 grid grid-cols-4 gap-7">
+        <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7">
           <div>
             <div className="relative overflow-hidden rounded-md">
               <img

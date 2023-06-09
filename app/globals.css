@@ -32,6 +32,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 ul,
 li {
   list-style: none;

@@ -5,11 +5,11 @@ import Subscribe from "./shared/Subscribe";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="">
       <Subscribe />
 
-      <section className="py-16">
-        <div className="container mx-auto grid grid-cols-5 gap-8">
+      <section className="py-16 px-10 sm:px-0">
+        <div className="container mx-auto grid sm:grid-cols-3 lg:grid-cols-5 gap-8">
           <div>
             <h3 className="font-medium text-heading mb-8">Contact Us</h3>
             <div>
