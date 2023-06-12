@@ -5,11 +5,7 @@ interface IProps {
 }
 
 const Row: FC<IProps> = ({ children }) => {
-  return (
-    <div className="flex justify-between gap-3 text-[15px] border-b border-dashed border-gray-300 px-6">
-      {children}
-    </div>
-  );
+  return <tr>{children}</tr>;
 };
 
 export default Row;

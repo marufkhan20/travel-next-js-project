@@ -8,9 +8,10 @@ interface IProps {
   id: string;
   onChange?: () => void;
   placeholder: string;
+  height?: string;
 }
 
-const Textarea: FC<IProps> = ({ value, placeholder, onChange, id }) => {
+const Textarea: FC<IProps> = ({ value, placeholder, onChange, id, height }) => {
   const [cursorActive, setCursorActive] = useState(false);
 
   useEffect(() => {
@@ -45,7 +46,9 @@ const Textarea: FC<IProps> = ({ value, placeholder, onChange, id }) => {
         value={value}
         id={id}
         onChange={onChange}
-        className="block w-full outline-none pb-3 mt-5 px-[14px] min-h-[140px]"
+        className={`block w-full outline-none pb-3 mt-5 px-[14px] ${
+          height ? `min-h-[${height}]` : "min-h-[140px]"
+        }`}
       />
     </div>
   );

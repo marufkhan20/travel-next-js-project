@@ -8,10 +8,10 @@ interface IProps {
 }
 
 const AdminLayout: FC<IProps> = ({ children }) => {
-  const [fullScreen, setFullScreen] = useState(true);
+  const [fullScreen, setFullScreen] = useState(false);
 
   return (
-    <main className="bg-light-thirdary min-h-screen">
+    <main className="bg-light-thirdary min-h-screen pb-10">
       <Header setFullScreen={setFullScreen} fullScreen={fullScreen} />
 
       <div className="flex justify-between mt-[87px]">

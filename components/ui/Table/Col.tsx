@@ -3,11 +3,18 @@ import { FC, ReactNode } from "react";
 interface IProps {
   children: ReactNode;
   className?: string;
+  position?: string;
 }
 
-const Col: FC<IProps> = ({ children, className }) => {
+const Col: FC<IProps> = ({ children, className, position }) => {
   return (
-    <div className={`py-6 whitespace-nowrap ${className}`}>{children}</div>
+    <td
+      className={`${className} py-4 text-[15px] text-heading border-b border-light border-dashed ${
+        position === "first" && "pl-6"
+      } ${position === "last" && "pr-6"}`}
+    >
+      {children}
+    </td>
   );
 };
 
