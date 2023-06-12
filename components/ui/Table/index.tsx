@@ -7,29 +7,30 @@ interface IProps {
 
 const Table: FC<IProps> = ({ headings, children }) => {
   return (
-    <div className="w-full overflow-hidden">
-      <div className="flex flex-col">
-        <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="overflow-hidden">
-              <div
-                className={`flex items-center justify-between gap-3 bg-[#f5f5f5] rounded-xl px-6`}
-              >
-                {headings?.map((item) => (
-                  <div
-                    key={item}
-                    className="py-4 whitespace-nowrap font-medium text-gray-700"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-              {children}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <table className="min-w-full bg-white">
+      <thead className="bg-light-thirdary">
+        <tr>
+          {headings?.map((item, idx) => (
+            <th
+              key={item}
+              className={`text-left py-4 ${
+                idx === 0 && "pl-6 rounded-tl-lg rounded-bl-lg"
+              } ${
+                idx + 1 === headings?.length &&
+                "pr-6 rounded-tr-lg rounded-br-lg"
+              } text-base text-heading font-medium`}
+            >
+              {item === "checkbox" ? (
+                <input type="checkbox" className="bg-transparent" />
+              ) : (
+                item
+              )}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>{children}</tbody>
+    </table>
   );
 };
 

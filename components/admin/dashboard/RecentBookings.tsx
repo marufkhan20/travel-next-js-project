@@ -17,7 +17,7 @@ const RecentBookings = () => {
           headings={["#", "Item", "Total", "Paid", "Status", "Completed At"]}
         >
           <Row>
-            <Col>#1</Col>
+            <Col position="first">#1</Col>
             <Col>
               New York <br />
               Discover America
@@ -29,13 +29,13 @@ const RecentBookings = () => {
                 Pending
               </button>
             </Col>
-            <Col className="text-right">
+            <Col position="last" className="text-right">
               04/04/2022
               <p>08:16</p>
             </Col>
           </Row>
           <Row>
-            <Col>#2</Col>
+            <Col position="first">#2</Col>
             <Col>
               New York <br />
               Discover America
@@ -47,13 +47,13 @@ const RecentBookings = () => {
                 Pending
               </button>
             </Col>
-            <Col className="text-right">
+            <Col position="last" className="text-right">
               04/04/2022
               <p>08:16</p>
             </Col>
           </Row>
           <Row>
-            <Col>#3</Col>
+            <Col position="first">#3</Col>
             <Col>
               New York <br />
               Discover America
@@ -65,13 +65,13 @@ const RecentBookings = () => {
                 Pending
               </button>
             </Col>
-            <Col className="text-right">
+            <Col position="last" className="text-right">
               04/04/2022
               <p>08:16</p>
             </Col>
           </Row>
           <Row>
-            <Col>#4</Col>
+            <Col position="first">#4</Col>
             <Col>
               New York <br />
               Discover America
@@ -83,13 +83,13 @@ const RecentBookings = () => {
                 Pending
               </button>
             </Col>
-            <Col className="text-right">
+            <Col position="last" className="text-right">
               04/04/2022
               <p>08:16</p>
             </Col>
           </Row>
           <Row>
-            <Col>#5</Col>
+            <Col position="first">#5</Col>
             <Col>
               New York <br />
               Discover America
@@ -101,7 +101,7 @@ const RecentBookings = () => {
                 Pending
               </button>
             </Col>
-            <Col className="text-right">
+            <Col position="last" className="text-right">
               04/04/2022
               <p>08:16</p>
             </Col>
